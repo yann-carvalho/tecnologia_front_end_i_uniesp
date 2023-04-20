@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
+    <h1><b>Formulário</b></h1>
+    
+    <form autocomplete="on" method="get" target="_self">
+        <h4>Nome: <input type="text" name="nome" id="nome"></h4>
+        <h4>Idade: <input type="number" name="idade" min="1" max="99" id="idade"></h4>
+        <h4>E-mail: <input type="email" name="email" id="email"></h4>
+        <h4>Estado civil:</h4>
+        Solteiro(a):<input type="radio" name="estadocivil" value="solteiro"><br>
+        Casado(a):<input type="radio" name="estadocivil" value="casado"><br>
+        Divorciado(a):<input type="radio" name="estadocivil" value="divorciado"><br>
+        <br> 
+        <input type="checkbox" name="casa" checked> Casa<br>
+        <input type="checkbox" name="carro"> Carro<br>
+        <input type="checkbox" name="moto"> Moto<br>
+        <br>
+        <select>
+            <option value="palmeiras">Palmeiras</option>
+            <option value="vasco_da_gama">Vasco da Gama</option>
+            <option value="cruzeiro">Cruzeiro</option>
+
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <input type="reset" value="Redefinir">
+    </form>
+</body>
+</html>
